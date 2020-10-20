@@ -1,0 +1,23 @@
+{
+  "env": {
+    "db": {
+      "userName": "SA",
+      "password": "C3FE4976A7B5AC567D63323ECEE142F0",
+      "server": "127.0.0.1",
+      "port":"1433",
+      "options": {
+          "database": "TestDB",
+          "encrypt": true,
+          "rowCollectionOnRequestCompletion" : true
+      }
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/report/mochawesome-report",
+      "overwrite": false,
+      "html": true,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+   }
+  }
+}

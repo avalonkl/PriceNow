@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-20T19:13:02.187Z",
+    "end": "2020-10-20T19:13:02.438Z",
+    "duration": 251,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "560cbc7f-fde7-439c-8c23-53b19786ec09",
+      "title": "",
+      "fullFile": "cypress/integration/DB_Connection.js",
+      "file": "cypress/integration/DB_Connection.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "81cc8c6d-b4c5-4ff9-8ac8-54f2da7ac156",
+          "title": "PriceNow Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "LogIn Validate",
+              "fullTitle": "PriceNow Tests LogIn Validate",
+              "timedOut": null,
+              "duration": 214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//const text = '0397Dun@44900';\n//const password = 'C3FE4976A7B5AC567D63323ECEE142F0';\n//cy.log(encrypt(text, password))\n//cy.log(decrypted)\n//cy.exec('java -cp ./cypress/fixtures/Crypto-1.0.jar core.Crypto \"' + password + '\"').its('stdout').should('eq', text).then((pass) => {\n//  cy.log(pass)\n//})\ncy.sqlServer('SELECT firstName FROM Data WHERE id = 3').should('eq', 'Anna');\ncy.sqlServer('SELECT firstName FROM Data ORDER BY id').should('have.length', 3).its(2).should('to.contain', 'Anna');\ncy.sqlServer('SELECT * FROM Data ORDER BY id').should('have.length', 3).its(2).should('to.include', 'Anna');\ncy.sqlServer('SELECT * FROM Data ORDER BY id').should('have.length', 3).its(3).should('not.exist');",
+              "err": {},
+              "uuid": "efe3b431-f302-4de8-b623-47752c7a4aaf",
+              "parentUUID": "81cc8c6d-b4c5-4ff9-8ac8-54f2da7ac156",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "efe3b431-f302-4de8-b623-47752c7a4aaf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 214,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}

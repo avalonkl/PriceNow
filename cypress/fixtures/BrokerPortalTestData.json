@@ -1,0 +1,14 @@
+{
+  "url": "https://stgportaltrng2.scif.com/",
+  "usernameId": "#username",
+  "username": "b12k56t",
+  "passwordId": "#password",
+  "password": "Cat99dog",
+  "loginId": "#login",
+  "PolicyKeyFromBPXpath": "//tr[4]//td[2]",
+  "LegalName3rdItemXpath": "//tr[4]//td[1]",
+  "SFOSelector": "iframe[id=\"SFOMainFrame\"]",
+  "PolicyKeyFromPVSelector": "td[class=\"DataText\"]",
+  "DropDownMenuButtonSelector": "span[class=\"fa fa-caret-down\"]",
+  "LogOutButtonId": "#noblank_logout2"
+}

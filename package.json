@@ -1,0 +1,21 @@
+{
+  "name": "BrokerPortal",
+  "version": "1.0.0",
+  "description": "Tests dependencies",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "~/node_modules/.bin/cypress open",
+    "cypress:run:edge": "~/node_modules/.bin/cypress run --reporter mochawesome --browser edge --headless",
+    "cypress:run:electron": "~/node_modules/.bin/cypress run --reporter mochawesome --browser electron"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "cypress-sql-server": "^1.0.0",
+    "cypress-xpath": "^1.6.0"
+  },
+  "devDependencies": {
+    "cypress": "^5.3.0",
+    "mocha": "^8.2.0",
+    "mochawesome": "^6.1.1"
+  }
+}
